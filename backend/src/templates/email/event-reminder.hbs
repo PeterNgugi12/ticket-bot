@@ -1,0 +1,27 @@
+<h2>⏰ Event Reminder: {{eventTitle}}</h2>
+
+<p>Hello <strong>{{attendee.name}}</strong>,</p>
+
+<p>This is a reminder that <strong>{{eventTitle}}</strong> is {{daysUntil}} day(s) from now!</p>
+
+<div class="ticket-info">
+  <h3>Event Information:</h3>
+  <p><strong>Date:</strong> {{formatDate eventDate}}<br>
+  <strong>Venue:</strong> {{venueName}}<br>
+  <strong>Ticket Type:</strong> {{attendee.tierName}}<br>
+  <strong>Ticket Number:</strong> {{attendee.ticketNumber}}</p>
+</div>
+
+<p>
+  <a href="{{googleMapsLink}}" class="button">📍 Get Directions</a>
+  <a href="{{appUrl}}/my-tickets/{{attendee.ticketNumber}}" class="button">🎟️ View Ticket</a>
+</p>
+
+<p><strong>What to bring:</strong></p>
+<ul>
+  <li>Your QR code (digital or printed)</li>
+  <li>Valid ID for verification</li>
+  <li>Your phone with the ticket</li>
+</ul>
+
+<p>Get ready for an amazing experience! 🎉</p>

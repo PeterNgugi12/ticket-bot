@@ -1,0 +1,21 @@
+<h2>💰 Payment Receipt</h2>
+
+<p>Hello <strong>{{fullName}}</strong>,</p>
+
+<p>This email confirms your payment to TIX CULTURE.</p>
+
+<div class="ticket-info">
+  <h3>Payment Details:</h3>
+  <p><strong>Receipt Number:</strong> {{paymentId}}<br>
+  <strong>Date:</strong> {{formatDate paymentDate}}<br>
+  <strong>Amount:</strong> {{formatCurrency amount}}<br>
+  <strong>Payment Method:</strong> M-PESA<br>
+  <strong>Transaction ID:</strong> {{transactionId}}<br>
+  <strong>Status:</strong> ✅ Completed</p>
+</div>
+
+<p>A detailed receipt is attached to this email for your records.</p>
+
+<p>If you have any questions about this transaction, please contact our support team.</p>
+
+<p>Thank you for choosing TIX CULTURE!</p>

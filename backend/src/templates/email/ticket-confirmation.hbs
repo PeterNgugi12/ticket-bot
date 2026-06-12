@@ -1,0 +1,39 @@
+<h2>🎫 Your Tickets Are Ready!</h2>
+
+<p>Hello <strong>{{fullName}}</strong>,</p>
+
+<p>Thank you for purchasing tickets to <strong>{{eventTitle}}</strong>! Your transaction has been completed successfully.</p>
+
+<div class="ticket-info">
+  <h3>Event Details:</h3>
+  <p><strong>Event:</strong> {{eventTitle}}<br>
+  <strong>Date:</strong> {{formatDate eventDate}}<br>
+  <strong>Venue:</strong> {{venueName}}<br>
+  <strong>Ticket Type:</strong> {{tierName}} x{{quantity}}<br>
+  <strong>Total Paid:</strong> {{formatCurrency totalAmount}}</p>
+</div>
+
+<div class="qr-code">
+  <img src="cid:ticket-qr" alt="QR Code" width="200">
+  <p><small>Scan this QR code at the entrance</small></p>
+</div>
+
+<p><strong>Important Information:</strong></p>
+<ul>
+  <li>Please arrive at least 30 minutes before the event start time</li>
+  <li>Carry a valid ID for verification</li>
+  <li>Screenshots of tickets are not accepted - please show the original QR code</li>
+  <li>No refunds within 24 hours of the event</li>
+</ul>
+
+<p>
+  <a href="{{googleMapsLink}}" class="button">📍 Get Directions</a>
+  <a href="{{appUrl}}/my-tickets/{{ticketNumber}}" class="button">🎟️ View My Tickets</a>
+</p>
+
+<p>Need to transfer your ticket? Log in to your account and go to "My Tickets".</p>
+
+<p>Enjoy the event! 🎉</p>
+
+<p>Best regards,<br>
+<strong>The TIX CULTURE Team</strong></p>
